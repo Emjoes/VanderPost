@@ -1,1 +1,0 @@
-export type SidebarView = 'workspace' | 'profile' | 'payment' | 'help';
