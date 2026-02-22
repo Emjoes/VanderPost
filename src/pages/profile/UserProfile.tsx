@@ -62,14 +62,14 @@ export function Profile({ socialNetworks, userInfo, onTogglePlatformConnection, 
               </div>
 
               <div className="flex-1">
-                <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 mb-1">
+                <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 mb-0.5">
                   {userInfo?.name || 'null'}
                 </h2>
-                <div className="flex items-center gap-1.5 text-xs text-zinc-600 dark:text-zinc-400 mb-2">
+                <div className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400 mb-1">
                   <Mail className="w-3.5 h-3.5" />
                   {userInfo?.email || 'null'}
                 </div>
-                <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+                <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 mb-1">
                   <div className="inline-flex items-center gap-1.5">
                     <Shield className="w-3.5 h-3.5" />
                     <span className="text-xs text-zinc-500 dark:text-zinc-400">{t('userprofile-verified')}</span>
@@ -82,7 +82,7 @@ export function Profile({ socialNetworks, userInfo, onTogglePlatformConnection, 
               <div className="flex flex-col items-end">
                 <button
                   onClick={onLogout}
-                  className="inline-flex items-center gap-2 px-3 py-2 text-xs font-medium rounded-md transition-colors bg-zinc-100 dark:bg-zinc-800 text-red-500 dark:text-red-500 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors bg-zinc-100 dark:bg-zinc-800 text-red-500 dark:text-red-500 hover:bg-zinc-200 dark:hover:bg-zinc-700"
                   aria-label={t('userprofile-logout')}
                 >
                   <span className="text-xs">{t('userprofile-logout') || 'Logout'}</span>
